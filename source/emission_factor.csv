@@ -1,0 +1,24 @@
+Country,Emission Factor,Source,Year
+Russia,0.352,IFI CM EC,2019
+US,0.285,IFI CM EC,2019
+Malaysia,0.470,IFI CM EC,2019
+Iran,0.470,IFI CM EC,2019
+Kazakhstan,0.653,IFI CM EC,2019
+Libya,0.538,IFI CM EC,2019
+Canada,0.231,IFI CM EC,2019
+Norway,0.061,IFI CM EC,2019
+Germany,0.366,IFI CM EC,2019
+Thailand,0.390,IFI CM EC,2019
+Venezuela,0.345,IFI CM EC,2019
+World,0.414,IFI CM EC,2019
+China_Xinjiang,0.980,Li et al.,2020
+China_Sichuan,0.200,Li et al.,2020
+China_Nei_Mongol,1.020,Li et al.,2020
+China_Yunnan,0.120,Li et al.,2020
+China_Guansu,0.600,Li et al.,2020
+China_Beijing,0.800,Li et al.,2020
+China_Zhejiang,0.800,Li et al.,2020
+China_Shanxi,1.100,Li et al.,2020
+China_Guizhou,0.700,Li et al.,2020
+China_Guangdong,0.720,Li et al.,2020
+China_RoC,0.841,Li et al.,2020
