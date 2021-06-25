@@ -4,11 +4,13 @@
 
 ## Summary
 
-This repository outlines [Canopi](https://www.canopi.cash)'s open-source carbon accounting methodology for Bitcoin. It provides daily estimates of carbon emissions released by a single BTC transaction since 2014-07-01. The model is primarily based on the [Cambridge Bitcoin Electricity Consumption Index](https://cbeci.org/), as well as various emission factors derived from the energy mix and geographic distribution of hashrate.
+This repository outlines [Canopi](https://www.canopi.cash)'s open-source carbon accounting methodology for Bitcoin. 
+
+It provides daily estimates of carbon emissions released by a single BTC transaction since 2014-07-01. The model is primarily based on the [Cambridge Bitcoin Electricity Consumption Index](https://cbeci.org/), as well as various emission factors derived from the energy mix and geographic distribution of hashrate.
 
 Canopi's [Climate API](https://www.canopi.cash/services/developer) and [Crypto Emission Calculator](https://app.canopi.cash/crypto) use this model to offer the ability to calculate the carbon footprint of BTC addresses. If you want to understand why we attribute emissions on a per-transaction basis, check out our crypto emission [explainer](https://www.canopi.cash/crypto/explainer). 
 
-Your can request access to Climate API [here](https://form.typeform.com/to/Z918Lf4B) and the documentation is located [here](https://www.canopi.cash/api-docs).
+
 
 ### License
 
@@ -34,6 +36,8 @@ We are confident that our model uses the most reliable public data sets and meth
 - `btc_txn_emissions_daily.csv` - the output of this model; the daily estimates of carbon emissions released by a single BTC transaction since 2014-07-01.
 - `README.md` - this document
 
+
+
 ## Data Sources
 
 The model takes into account the following data sources in calculating the daily average emission of a single BTC transaction.
@@ -44,6 +48,8 @@ The total electricity consumption of the Bitcoin network is derived from the [Ca
 
 The CBECI model is developed by Cambridge Center for Alternative Finance (CCAF) and originally based on a bottom-up approach initially developed by Marc Bevand in 2017 that takes different types of available mining hardware as the starting point. Their methodology, assumptions and limitations are detailed [here](https://cbeci.org/cbeci/methodology).
 
+
+
 ### Geographic Distribution of BTC Mining Hashrate, *Monthly/Static*
 
 The geographic distribution of hashrate is derived from CCAF's [Bitcoin Mining Map](https://cbeci.org/mining_map), which uses non-public data offered by the BTC.com, Poolin, and ViaBTC pools for research purposes. The data is available monthly between September 2019 and April 2020.
@@ -52,15 +58,23 @@ Even though it was last updated more than a year ago, Canopi considers it as the
 
 We will continue to use this data, but are also seeking partnerships with major mining pool providers to receive up-to-date, fine-grained data.
 
+
+
 ### Emission Factors with Energy Mix, *Static*
 
 The Canopi model makes an explicit assumption that the energy mix used for mining operations in a region is the same as the average energy mix published for that region.
 
 The emission factors for each country/region identified in Step 2 are derived from two different data sources: [IFI Dataset of Default Grid Factors v.2.0 from July 2019](https://unfccc.int/sites/default/files/resource/Harmonized_Grid_Emission_factor_data_set.xlsx) for all countries except China, and [Xin et al](https://www.sciencedirect.com/science/article/pii/S1876610217361714) for regions in China.
 
+
+
 ### Number of BTC Transactions, *Daily*
 
 The number of BTC transactions is aggregated daily from a dataset publicly available on Google's BigQuery. The query can be found [here](https://console.cloud.google.com/bigquery?sq=206704257195:4acb2ac67b8c41c190c36a0cb7fa7129).
+
+
+
+
 
 ## Methodology
 
